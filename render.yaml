@@ -3,9 +3,14 @@ services:
     name: nodejs-app
     runtime: docker
     dockerfilePath: ./Dockerfile
+    envVars:
+    - key: PORT
+      value: 3000
 
   - type: web
     name: mongo
     runtime: docker
     image:
       url: docker.io/mongo:latest
+    - key: PORT
+      value: 27017
