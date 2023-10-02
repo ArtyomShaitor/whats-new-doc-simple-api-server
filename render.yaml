@@ -6,7 +6,8 @@ services:
     envVars:
       - key: PORT
         value: 3000
-  - type: web
+  
+  - type: pserv
     name: mongo
     runtime: docker
     envVars:
