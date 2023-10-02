@@ -6,12 +6,11 @@ services:
     envVars:
       - key: PORT
         value: 3000
-  
-  - type: pserv
+  - type: web
     name: mongo
     runtime: docker
     envVars:
       - key: PORT
         value: 27017
     image:
-      url: docker.io/mongo:latest
+      url: library/mongo:latest
