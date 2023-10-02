@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: nodejs-app
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+
+  - type: web
+    name: mongo
+    runtime: docker
+    image: mongo
