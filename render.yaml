@@ -8,4 +8,4 @@ services:
     name: mongo
     runtime: docker
     image:
-      url: https://hub.docker.com/_/mongo
+      url: docker.io/mongo:latest
