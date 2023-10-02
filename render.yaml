@@ -7,4 +7,5 @@ services:
   - type: web
     name: mongo
     runtime: docker
-    image: mongo
+    image:
+      url: https://hub.docker.com/_/mongo
