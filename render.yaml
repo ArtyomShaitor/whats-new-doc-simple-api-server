@@ -4,13 +4,14 @@ services:
     runtime: docker
     dockerfilePath: ./Dockerfile
     envVars:
-    - key: PORT
-      value: 3000
+      - key: PORT
+        value: 3000
 
   - type: web
     name: mongo
     runtime: docker
+    envVars:
+      - key: PORT
+        value: 27017
     image:
       url: docker.io/mongo:latest
-    - key: PORT
-      value: 27017
